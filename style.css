@@ -1,0 +1,19 @@
+.pmenu{
+    position: absolute;
+    width: 67px;
+    left: 58px;
+    top: 5%;
+    
+}
+
+.mback{
+    
+    position: absolute;
+    opacity: 0%;
+width: 1282px;
+height: 632px;
+left: 100px;
+top: 213px;
+
+background: #FFFFFF;
+}
