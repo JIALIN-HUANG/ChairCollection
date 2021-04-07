@@ -48,28 +48,93 @@ function gotAllChairs(err) {
 function consoleLogChairs() {
   console.log("consoleLogChairs()");
   chairs.forEach((chair) => {
-    
-    var chairCategory = chair.fields.chair_category;
-    chairCategory.forEach((category) => {
-
-      if (category == 'wood'){
-
-        //diplay wood image
-        var chairImage = document.createElement("img");
-        chairImage.classList.add('wood-image');
-        chairImage.src = chair.fields.chairImage[0].url;
-        document.querySelector(".wood-container").appendChild(chairImage);
-      }
-
-      if (category == 'fiveZero') {
-        var fiveZeroChairName = document.createElement("h1");
-        fiveZeroChairName.classList.add("fiveZero-name");
-        fiveZeroChairName.innerText = chair.fields.name;
-        document.querySelector(".fiveZero-container").appendChild(fiftiesChairName);
-      }
-
-    })
-
+    console.log("Chair:",chair);
   });
 }
 
+
+  function showChairs() {
+    console.log("showChairs()");
+    chairs.forEach((chair) => {
+
+      var chairCategory = chair.fields.chair_category;
+      chairCategory.forEach((category) => {
+  
+        if (category == 'wood'){
+  
+          //diplay wood image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('wood-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".wood-container").appendChild(chairImage);
+        }
+
+  // This is to for display the Text
+        // if (category == 'fifties') {
+        //   var fiftiesChairName = document.createElement("h1");
+        //   fiftiesChairName.classList.add("fifties-name");
+        //   fiftiesChairName.innerText = chair.fields.name;
+        //   document.querySelector(".fifties-container").appendChild(fiftiesChairName);
+        // }
+
+        //1900
+        if (category == 'zeroZero'){
+  
+          //diplay 1900's image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('zeroZero-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".zeroZero-container").appendChild(chairImage);
+        }
+
+        //1910
+        if (category == 'oneZero'){
+  
+          //diplay 1910's image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('oneZero-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".oneZero-container").appendChild(chairImage);
+        }
+
+        if (category == 'twoZero'){
+  
+          //diplay 1920's image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('twoZero-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".twoZero-container").appendChild(chairImage);
+        }
+
+if (category == 'threeZero'){
+  
+          //diplay 1920's image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('threeZero-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".threeZero-container").appendChild(chairImage);
+        }
+
+        if (category == 'fourZero'){
+  
+          //diplay 1920's image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('fourZero-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".fourZero-container").appendChild(chairImage);
+        }
+
+        if (category == 'fifties'){
+  
+          //diplay 1920's image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('fifties-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".fifties-container").appendChild(chairImage);
+        }
+
+      })
+
+    });
+  }
+    

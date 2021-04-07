@@ -1,12 +1,11 @@
-/* .pmenu{
-    position: absolute;
-    width: 67px;
-    left: 58px;
-    top: 5%;
-    
+.pmenu {
+  position: absolute;
+  width: 67px;
+  left: 58px;
+  top: 5%;
 }
 
-.mback{
+/*.mback{
     
     position: absolute;
     opacity: 0%;
@@ -29,26 +28,100 @@ background: #FFFFFF;
     overflow-x: hidden;
     } */
 
-    .main-container{
+.AAC {
+  position: absolute;
+  width: 1304px;
+  height: 141px;
+  left: 15%;
+  top: 36px;
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 110px;
+  text-align: right;
+}
+
+/* .main-container{
         white-space: nowrap;
-    }
+    } */
 
-    .wood-container{
-        font-size: 3rem;
-        font-family: Arial, Helvetica, sans-serif;
-        border: 1px solid;
-        background: lightyellow;
-        display: flex;
-    }
+.wood-container {
+  position: relative;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid;
+  display: flex;
 
-    .fifties-container{
-        font-size: 3rem;
-        font-family: Arial, Helvetica, sans-serif;
-        border: 1px solid;
-        background: yellowgreen;
-    }
+  overflow-x: auto;
+  overflow-y: hidden;
+  top: 20%;
+  height: 280px;
+  white-space: nowrap;
+  margin-top: 150px;
+}
 
-    .wood-image{
-        width: 200px;
-        height: auto;
-    }
+
+.wood-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.time-container{
+    position: relative;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid;
+    display: flex;
+  
+    overflow-x: auto;
+    overflow-y: hidden;
+    top: 20%;
+    height: 280px;
+    white-space: nowrap;
+    margin-top: 30px;
+}
+
+.zeroZero-image{
+    width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.oneZero-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.twoZero-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.threeZero-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.fourZero-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.fifties-image {
+    margin-top: 10px;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
