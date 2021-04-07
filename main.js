@@ -111,10 +111,10 @@ chairContainer.addEventListener("click", function(){
 })
 
 //----------------1950s---------------------------
-var filter1950 = document.querySelector('.1950s');
+var filter1950 = document.querySelector('.fiveZero');
 filter1950.addEventListener("click", function(){
 
-  if(chairContainer.classList.contains("1950s")){
+  if(chairContainer.classList.contains("fiveZero")){
     chairContainer.style.background = "yellow";
   } else{
     chairContainer.style.background = "white";
@@ -122,10 +122,10 @@ filter1950.addEventListener("click", function(){
 })
 
 //----------------20s---------------------------
-var filter20 = document.querySelector('.20s');
+var filter20 = document.querySelector('.twenty');
 filter20.addEventListener("click", function(){
 
-  if(chairContainer.classList.contains("20s")){
+  if(chairContainer.classList.contains("twenty")){
     chairContainer.style.background = "yellow";
   } else{
     chairContainer.style.background = "white";
@@ -137,6 +137,104 @@ var filterMarco = document.querySelector('.marco');
 filterMarco.addEventListener("click", function(){
 
   if(chairContainer.classList.contains("marco")){
+    chairContainer.style.background = "yellow";
+  } else{
+    chairContainer.style.background = "white";
+  }
+})
+
+//----------------1960---------------------------
+var filter1960 = document.querySelector('.sixZero');
+filter1960.addEventListener("click", function(){
+
+  if(chairContainer.classList.contains("sixZero")){
+    chairContainer.style.background = "yellow";
+  } else{
+    chairContainer.style.background = "white";
+  }
+})
+
+//----------------1970---------------------------
+var filter1970 = document.querySelector('.sevenZero');
+filter1970.addEventListener("click", function(){
+
+  if(chairContainer.classList.contains("sevenZero")){
+    chairContainer.style.background = "yellow";
+  } else{
+    chairContainer.style.background = "white";
+  }
+})
+
+//----------------1980---------------------------
+var filter1980 = document.querySelector('.eightZero');
+filter1980.addEventListener("click", function(){
+
+  if(chairContainer.classList.contains("eightZero")){
+    chairContainer.style.background = "yellow";
+  } else{
+    chairContainer.style.background = "white";
+  }
+})
+
+//----------------1990---------------------------
+var filter1990 = document.querySelector('.nineZero');
+filter1990.addEventListener("click", function(){
+
+  if(chairContainer.classList.contains("nineZero")){
+    chairContainer.style.background = "yellow";
+  } else{
+    chairContainer.style.background = "white";
+  }
+})
+
+//----------------1900---------------------------
+var filter1900 = document.querySelector('.zeroZero');
+filter1900.addEventListener("click", function(){
+
+  if(chairContainer.classList.contains("1900")){
+    chairContainer.style.background = "yellow";
+  } else{
+    chairContainer.style.background = "white";
+  }
+})
+
+//----------------1910---------------------------
+var filter1910 = document.querySelector('.oneZero');
+filter1910.addEventListener("click", function(){
+
+  if(chairContainer.classList.contains("oneZero")){
+    chairContainer.style.background = "yellow";
+  } else{
+    chairContainer.style.background = "white";
+  }
+})
+//----------------1920---------------------------
+var filter1920 = document.querySelector('.twoZero');
+filter1920.addEventListener("click", function(){
+
+  if(chairContainer.classList.contains("twoZero")){
+    chairContainer.style.background = "yellow";
+  } else{
+    chairContainer.style.background = "white";
+  }
+})
+
+//----------------1930---------------------------
+var filter1930 = document.querySelector('.threeZero');
+filter1930.addEventListener("click", function(){
+
+  if(chairContainer.classList.contains("threeZero")){
+    chairContainer.style.background = "yellow";
+  } else{
+    chairContainer.style.background = "white";
+  }
+})
+
+//----------------1940---------------------------
+var filter1940 = document.querySelector('.fourZero');
+filter1940.addEventListener("click", function(){
+
+  if(chairContainer.classList.contains("fourZero")){
     chairContainer.style.background = "yellow";
   } else{
     chairContainer.style.background = "white";
