@@ -175,3 +175,29 @@ background: #FFFFFF;
     align-self: center;
     margin-left: 1rem;
 } */
+
+.designers{
+    position: relative;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid;
+    display: flex;
+  
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 280px;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.marco-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.marco-container{
+    display: flex;
+}
+

@@ -179,6 +179,15 @@ function consoleLogChairs() {
         //   document.querySelector(".twenty-container").appendChild(chairImage);
         // }
 
+        if (category == 'marco'){
+  
+          //diplay wood image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('marco-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".marco-container").appendChild(chairImage);
+        }
+
       })
 
     });
