@@ -1,4 +1,4 @@
-.pmenu{
+/* .pmenu{
     position: absolute;
     width: 67px;
     left: 58px;
@@ -27,4 +27,28 @@ background: #FFFFFF;
     background: invisiable;
     overflow-y: auto;
     overflow-x: hidden;
+    } */
+
+    .main-container{
+        white-space: nowrap;
+    }
+
+    .wood-container{
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid;
+        background: lightyellow;
+        display: flex;
+    }
+
+    .fifties-container{
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid;
+        background: yellowgreen;
+    }
+
+    .wood-image{
+        width: 200px;
+        height: auto;
     }
