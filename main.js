@@ -106,7 +106,7 @@ function consoleLogChairs() {
           document.querySelector(".twoZero-container").appendChild(chairImage);
         }
 
-if (category == 'threeZero'){
+        if (category == 'threeZero'){
   
           //diplay 1920's image
           var chairImage = document.createElement("img");
@@ -132,6 +132,52 @@ if (category == 'threeZero'){
           chairImage.src = chair.fields.chairImage[0].url;
           document.querySelector(".fifties-container").appendChild(chairImage);
         }
+        
+        if (category == 'sixZero'){
+  
+          //diplay 1960's image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('sixZero-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".sixZero-container").appendChild(chairImage);
+        }
+
+        if (category == 'sevenZero'){
+  
+          //diplay 1970's image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('sevenZero-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".sevenZero-container").appendChild(chairImage);
+        }
+
+        if (category == 'eightZero'){
+  
+          //diplay 1970's image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('eightZero-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".eightZero-container").appendChild(chairImage);
+        }
+
+        if (category == 'nineZero'){
+  
+          //diplay 1990's image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('nineZero-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".nineZero-container").appendChild(chairImage);
+        }
+
+        // //twenty
+        // if (category == 'twenty'){
+  
+        //   //diplay 2000's image
+        //   var chairImage = document.createElement("img");
+        //   chairImage.classList.add('twenty-image');
+        //   chairImage.src = chair.fields.chairImage[0].url;
+        //   document.querySelector(".twenty-container").appendChild(chairImage);
+        // }
 
       })
 

@@ -82,7 +82,21 @@ background: #FFFFFF;
     top: 20%;
     height: 280px;
     white-space: nowrap;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+
+.oneZero-container,
+.zeroZero-container,
+.twoZero-container,
+.threeZero-container,
+.fourZero-container,
+.fifties-container,
+.sixZero-container,
+.sevenZero-container,
+.eightZero-container,
+.nineZero-container,
+.twenty-container{
+  display: flex;
 }
 
 .zeroZero-image{
@@ -121,7 +135,43 @@ background: #FFFFFF;
 }
 
 .fifties-image {
-    margin-top: 10px;
-  font-size: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
 }
+
+.sixZero-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.sevenZero-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.eightZero-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.nineZero-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+/* .twenty-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+} */
