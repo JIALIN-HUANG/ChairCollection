@@ -197,7 +197,25 @@ background: #FFFFFF;
     margin-left: 1rem;
 }
 
-.marco-container{
+.arne-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.finn-image{
+    width: 200px;
+    height: auto;
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.marco-container,
+.arne-container,
+.finn-container{
     display: flex;
 }
+
+
 

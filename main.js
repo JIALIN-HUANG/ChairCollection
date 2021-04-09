@@ -188,8 +188,37 @@ function consoleLogChairs() {
           document.querySelector(".marco-container").appendChild(chairImage);
         }
 
+        if (category == 'arne'){
+  
+          //diplay Arne image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('arne-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".arne-container").appendChild(chairImage);
+        }
+
+        if (category == 'finn'){
+  
+          //diplay Finn image
+          var chairImage = document.createElement("img");
+          chairImage.classList.add('finn-image');
+          chairImage.src = chair.fields.chairImage[0].url;
+          document.querySelector(".finn-container").appendChild(chairImage);
+        }
+
+      //   //chair-container class
+      //   var chairContainer = document.createElement("div");
+      //   chairContainer.classList.add("chair-container");
+      //   document.querySelector(".container").append(chairContainer);
+
+      //   //add chair designers name
+      //   var chairDesigner = document.createElement("h2");
+      //   chairDesigner.classList.add('chair-designers');
+      //   chairDesigner.innerText = chair.fields.designer;
+      //   chairDesigner.append(chair-Designer)
+      // 
+      
       })
 
     });
-  }
-    
+    }
