@@ -62,7 +62,6 @@ background: #FFFFFF;
   margin-top: 150px;
 }
 
-
 .wood-image {
   width: 200px;
   height: auto;
@@ -70,19 +69,19 @@ background: #FFFFFF;
   margin-left: 1rem;
 }
 
-.time-container{
-    position: relative;
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    border-top: 1px solid;
-    display: flex;
-  
-    overflow-x: auto;
-    overflow-y: hidden;
-    top: 20%;
-    height: 280px;
-    white-space: nowrap;
-    margin-top: 10px;
+.time-container {
+  position: relative;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid;
+  display: flex;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  top: 20%;
+  height: 280px;
+  white-space: nowrap;
+  margin-top: 10px;
 }
 
 .oneZero-container,
@@ -95,78 +94,81 @@ background: #FFFFFF;
 .sevenZero-container,
 .eightZero-container,
 .nineZero-container,
-.twenty-container{
+.twenty-container {
   display: flex;
 }
 
-.zeroZero-image{
-    width: 200px;
+.zeroZero-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.oneZero-image {
+  width: 200px;
   height: auto;
   align-self: center;
   margin-left: 1rem;
 }
 
-.oneZero-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+.twoZero-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
-.twoZero-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+.threeZero-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
-.threeZero-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
-}
-
-.fourZero-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+.fourZero-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
 .fifties-image {
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
-.sixZero-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+.sixZero-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
-.sevenZero-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+.sevenZero-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
-.eightZero-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+.eightZero-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
-.nineZero-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+.nineZero-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
 /* .twenty-image{
@@ -176,46 +178,43 @@ background: #FFFFFF;
     margin-left: 1rem;
 } */
 
-.designers{
-    position: relative;
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    border-top: 1px solid;
-    display: flex;
-  
-    overflow-x: auto;
-    overflow-y: hidden;
-    height: 280px;
-    white-space: nowrap;
-    margin-top: 10px;
+.designers {
+  position: relative;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid;
+  display: flex;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 280px;
+  white-space: nowrap;
+  margin-top: 10px;
 }
 
-.marco-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+.marco-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
-.arne-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+.arne-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
-.finn-image{
-    width: 200px;
-    height: auto;
-    align-self: center;
-    margin-left: 1rem;
+.finn-image {
+  width: 200px;
+  height: auto;
+  align-self: center;
+  margin-left: 1rem;
 }
 
 .marco-container,
 .arne-container,
-.finn-container{
-    display: flex;
+.finn-container {
+  display: flex;
 }
-
-
-
