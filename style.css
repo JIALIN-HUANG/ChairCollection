@@ -92,7 +92,8 @@
 .arne-image,
 .finn-image,
 .arneJ-image,
-.eero-image {
+.eero-image,
+.gerrit-image {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -123,7 +124,8 @@
 .arne-container,
 .finn-container,
 .arneJ-container,
- .eero-container{
+ .eero-container,
+ .gerrit-container{
   display: flex;
 }
 .wood-box {
@@ -159,8 +161,56 @@
 .arne-image:hover,
 .finn-image:hover,
 .arneJ-image:hover,
-.eero-image:hover
+.eero-image:hover,
+.gerrit-image:hover
  {
   filter: brightness(50%);
   transition: all 0.25s;
 }
+
+/* .grid-section{
+
+} */
+
+.modal-image{
+    width: 500px;
+    height: auto;
+}
+
+.modal-container {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none;
+  }
+  
+  .modal-box {
+    box-sizing: border-box;
+    background: white;
+    overflow-x: scroll;
+    position: relative;
+    height: auto;
+    max-width: 600px;
+    padding: 2rem;
+  }
+  
+  .modal-image {
+      width: 200px;
+      height: auto;
+  }
+  
+  .modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .modal-is-active .modal-container {
+    display: flex;
+  }
