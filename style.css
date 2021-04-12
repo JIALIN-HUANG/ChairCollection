@@ -27,7 +27,7 @@
   position: absolute;
   width: 1304px;
   height: 141px;
-  left: 15%;
+  right: 0%;
   top: 36px;
   font-family: Helvetica;
   font-style: normal;
@@ -94,11 +94,11 @@
 .arneJ-image,
 .eero-image,
 .gerrit-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center center;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
 }
 
 /* .twenty-image{
@@ -107,6 +107,7 @@
       align-self: center;
       margin-left: 1rem;
   } */
+
 .designers {
   position: relative;
   font-size: 3rem;
@@ -124,8 +125,8 @@
 .arne-container,
 .finn-container,
 .arneJ-container,
- .eero-container,
- .gerrit-container{
+.eero-container,
+.gerrit-container {
   display: flex;
 }
 .wood-box {
@@ -162,8 +163,7 @@
 .finn-image:hover,
 .arneJ-image:hover,
 .eero-image:hover,
-.gerrit-image:hover
- {
+.gerrit-image:hover {
   filter: brightness(50%);
   transition: all 0.25s;
 }
@@ -172,45 +172,86 @@
 
 } */
 
-.modal-image{
-    width: 500px;
-    height: auto;
+.modal-image {
+  width: 500px;
+  height: auto;
+  top: 30%;
+  position: absolute;
 }
 
 .modal-container {
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    display: none;
-  }
-  
-  .modal-box {
-    box-sizing: border-box;
-    background: white;
-    overflow-x: scroll;
-    position: relative;
-    height: auto;
-    max-width: 600px;
-    padding: 2rem;
-  }
-  
-  .modal-image {
-      width: 200px;
-      height: auto;
-  }
-  
-  .modal-close-btn {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  display: none;
+
+  opacity: 0;
+   visibility: hidden;
+   transition: all .25s;
+}
+
+.modal-box {
+  box-sizing: border-box;
+  background: #EFEFEF;
+  overflow-x: scroll;
+  position: relative;
+  height: 800px;
+  width: 1000px;
+  padding: 2rem;
+  transition: all 0.25s;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-is-active .modal-container {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: all .25s;
+}
+
+.chair-artist {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: normal;
+
+  width: 255px;
+  height: 135px;
+  left: 63%;
+  top: 50%;
+  padding: 2rem;
+  line-height: 41px;
+
+}
+
+.chair-title {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-  }
+    font-size: 1.5rem;
+    font-weight: normal;
   
-  .modal-is-active .modal-container {
-    display: flex;
-  }
+    width: 255px;
+    height: 135px;
+    right: 10%;
+    top: 40%;
+    padding: 2rem;
+    line-height: 41px;
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.modal-close-btn {
+  font-size: 1.5rem;
+}

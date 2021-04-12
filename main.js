@@ -29,315 +29,873 @@ function gotAllChairs(err) {
   // call functions to log and show the books
   consoleLogChairs();
   try {
-   showChairs();
-  } catch(e){
-   console.log(e);
+    showChairs();
+  } catch (e) {
+    console.log(e);
   }
 }
 // just loop through the books and console.log them
 function consoleLogChairs() {
   console.log("consoleLogChairs()");
   chairs.forEach((chair) => {
-    console.log("Chair:",chair);
+    console.log("Chair:", chair);
   });
 }
-  function showChairs() {
-    console.log("showChairs()");
-    chairs.forEach((chair) => {
-      var chairCategory = chair.fields.chair_category;
-      chairCategory.forEach((category) => {
-        if (category == 'wood'){
-          // create a wood box, this is where image will go
-          var woodBox = document.createElement("div");
-          woodBox.classList.add("wood-box");
-          document.querySelector(".wood-container").append(woodBox);
+function showChairs() {
+  console.log("showChairs()");
+  chairs.forEach((chair) => {
+    var chairCategory = chair.fields.chair_category;
+    chairCategory.forEach((category) => {
+      if (category == "wood") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".wood-container").append(woodBox);
 
-          //diplay wood image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('wood-image');
-          chairImage.classList.add("js-modal-toggal");
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
+        //diplay wood image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("wood-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
 
-          //add modle container to the song container
-          var modalContainer = document.createElement("div");
-          modalContainer.classList.add("modal-container");
-          woodBox.append(modalContainer);
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
 
-              // add modal box to modal container
-    var modalBox = document.createElement("div");
-    modalBox.classList.add("modal-box");
-    modalContainer.append(modalBox);
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
 
-    // add image to modal box
-    var modalImage = document.createElement("img");
-    modalImage.classList.add("modal-image");
-    modalImage.src = chair.fields.chairImage[0].url;
-    modalBox.append(modalImage);
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
 
         // add chair titles to modal box
         var chairTitle = document.createElement("h1");
         chairTitle.classList.add("chair-title");
         chairTitle.innerText = chair.fields.name;
         modalBox.append(chairTitle);
-    
+
         // add artist to modal box
         var nameOfDesigner = document.createElement("h1");
         nameOfDesigner.classList.add("chair-artist");
         nameOfDesigner.innerText = chair.fields.designer;
         modalBox.append(nameOfDesigner);
-    
-           // add close button to modal box
-    var closeModalBtn = document.createElement("div");
-    closeModalBtn.classList.add("modal-close-btn");
-    closeModalBtn.classList.add("js-modal-toggle");
-    closeModalBtn.innerHTML = "Close";
-    modalBox.append(closeModalBtn);
 
-
-
-        }
-  // This is to for display the Text
-        // if (category == 'fifties') {
-        //   var fiftiesChairName = document.createElement("h1");
-        //   fiftiesChairName.classList.add("fifties-name");
-        //   fiftiesChairName.innerText = chair.fields.name;
-        //   document.querySelector(".fifties-container").appendChild(fiftiesChairName);
-        // }
-        //1900
-        if (category == 'zeroZero'){
-
-          // create a wood box, this is where image will go
-          var woodBox = document.createElement("div");
-          woodBox.classList.add("wood-box");
-
-          document.querySelector(".zeroZero-container").append(woodBox);
-
-          //diplay 1900's image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('zeroZero-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
-        //1910
-        if (category == 'oneZero'){
-
-          // create a wood box, this is where image will go
-          var woodBox = document.createElement("div");
-          woodBox.classList.add("wood-box");
-          document.querySelector(".oneZero-container").append(woodBox);
-
-          //diplay 1910's image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('oneZero-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
-        if (category == 'twoZero'){
-
-          // create a wood box, this is where image will go
-          var woodBox = document.createElement("div");
-          woodBox.classList.add("wood-box");
-          document.querySelector(".twoZero-container").append(woodBox);
-
-          //diplay 1920's image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('twoZero-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
-
-        if (category == 'threeZero'){
-
-          // create a wood box, this is where image will go
-          var woodBox = document.createElement("div");
-          woodBox.classList.add("wood-box");
-          document.querySelector(".threeZero-container").append(woodBox);
-
-          //diplay 1920's image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('threeZero-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
-        if (category == 'fourZero'){
-
-          // create a wood box, this is where image will go
-          var woodBox = document.createElement("div");
-          woodBox.classList.add("wood-box");
-          document.querySelector(".fourZero-container").append(woodBox);
-
-          //diplay 1920's image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('fourZero-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
-
-        if (category == 'fifties'){
-
-          // create a wood box, this is where image will go
-          var woodBox = document.createElement("div");
-          woodBox.classList.add("wood-box");
-          document.querySelector(".fifties-container").append(woodBox);
-
-          //diplay 1920's image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('fifties-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
-
-        if (category == 'sixZero'){
-
-          // create a wood box, this is where image will go
-          var woodBox = document.createElement("div");
-          woodBox.classList.add("wood-box");
-          document.querySelector(".sixZero-container").append(woodBox);
-
-          //diplay 1960's image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('sixZero-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
-
-        if (category == 'sevenZero'){
-
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+      // This is to for display the Text
+      // if (category == 'fifties') {
+      //   var fiftiesChairName = document.createElement("h1");
+      //   fiftiesChairName.classList.add("fifties-name");
+      //   fiftiesChairName.innerText = chair.fields.name;
+      //   document.querySelector(".fifties-container").appendChild(fiftiesChairName);
+      // }
+      //1900
+      if (category == "zeroZero") {
         // create a wood box, this is where image will go
         var woodBox = document.createElement("div");
         woodBox.classList.add("wood-box");
-        document.querySelector(".sevenZero-container").append(woodBox);
+        document.querySelector(".zeroZero-container").append(woodBox);
 
-          //diplay 1970's image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('sevenZero-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-         woodBox.appendChild(chairImage);
-        }
+        //diplay 1900's image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("zeroZero-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
 
-        if (category == 'eightZero'){
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
 
-          // create a wood box, this is where image will go
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      //1910
+      if (category == "oneZero") {
+        // create a wood box, this is where image will go
         var woodBox = document.createElement("div");
         woodBox.classList.add("wood-box");
+        document.querySelector(".oneZero-container").append(woodBox);
+
+        //diplay 1910's image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("oneZero-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "twoZero") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".twoZero-container").append(woodBox);
+
+        //diplay 1920's image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("twoZero-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "threeZero") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".threeZero-container").append(woodBox);
+
+        //diplay 1920's image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("threeZero-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "fourZero") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".fourZero-container").append(woodBox);
+
+        //diplay 1920's image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("fourZero-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "fifties") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".fifties-container").append(woodBox);
+
+        //diplay 1920's image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("fifties-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "sixZero") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".sixZero-container").append(woodBox);
+
+        //diplay 1960's image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("sixZero-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "sevenZero") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+
+        document.querySelector(".sevenZero-container").append(woodBox);
+
+        //diplay 1970's image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("sevenZero-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "eightZero") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+
         document.querySelector(".eightZero-container").append(woodBox);
 
-          //diplay 1970's image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('eightZero-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
+        //diplay 1970's image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("eightZero-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
 
-        if (category == 'nineZero'){
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
 
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "nineZero") {
         // create a wood box, this is where image will go
         var woodBox = document.createElement("div");
         woodBox.classList.add("wood-box");
         document.querySelector(".nineZero-container").append(woodBox);
 
-          //diplay 1990's image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('nineZero-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
-        // //twenty
-        // if (category == 'twenty'){
-        //   //diplay 2000's image
-        //   var chairImage = document.createElement("img");
-        //   chairImage.classList.add('twenty-image');
-        //   chairImage.src = chair.fields.chairImage[0].url;
-        //   document.querySelector(".twenty-container").appendChild(chairImage);
-        // }
+        //diplay 1990's image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("nineZero-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
 
-        if (category == 'marco'){
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
 
- // create a wood box, this is where image will go
- var woodBox = document.createElement("div");
- woodBox.classList.add("wood-box");
- document.querySelector(".marco-container").append(woodBox);
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
 
-          //diplay wood image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('marco-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-         woodBox.appendChild(chairImage);
-        }
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
 
-        if (category == 'arne'){
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
 
-           // create a wood box, this is where image will go
- var woodBox = document.createElement("div");
- woodBox.classList.add("wood-box");
- document.querySelector(".arne-container").append(woodBox);
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
 
-          //diplay Arne image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('arne-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+      // //twenty
+      // if (category == 'twenty'){
+      //   //diplay 2000's image
+      //   var chairImage = document.createElement("img");
+      //   chairImage.classList.add('twenty-image');
+      //   chairImage.src = chair.fields.chairImage[0].url;
+      //   document.querySelector(".twenty-container").appendChild(chairImage);
+      // }
 
+      if (category == "marco") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".marco-container").append(woodBox);
 
-        if (category == 'finn'){
+        //diplay wood image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("marco-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
 
- // create a wood box, this is where image will go
- var woodBox = document.createElement("div");
- woodBox.classList.add("wood-box");
- document.querySelector(".finn-container").append(woodBox);
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
 
-          //diplay Finn image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('finn-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          woodBox.appendChild(chairImage);
-        }
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
 
-        if (category == 'arneJ'){
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
 
-          // create a wood box, this is where image will go
-          var woodBox = document.createElement("div");
-          woodBox.classList.add("wood-box");
-          document.querySelector(".arneJ-container").append(woodBox);
-         
-         //diplay Finn image
-          var chairImage = document.createElement("img");
-         chairImage.classList.add('arneJ-image');
-         chairImage.src = chair.fields.chairImage[0].url;
-         woodBox.appendChild(chairImage);
-         }
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
 
-         if (category == 'eero'){
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
 
-         // create a wood box, this is where image will go
-         var eeroBox = document.createElement("div");
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "arne") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".arne-container").append(woodBox);
+
+        //diplay Arne image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("arne-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "finn") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".finn-container").append(woodBox);
+
+        //diplay Finn image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("finn-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "arneJ") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".arneJ-container").append(woodBox);
+
+        //diplay Finn image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("arneJ-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "eero") {
+        // create a wood box, this is where image will go
+        var eeroBox = document.createElement("div");
         eeroBox.classList.add("wood-box");
-         document.querySelector(".eero-container").append(eeroBox);
-                 
-          //diplay Finn image
-          var chairImage = document.createElement("img");
-          chairImage.classList.add('eero-image');
-          chairImage.src = chair.fields.chairImage[0].url;
-          eeroBox.appendChild(chairImage);
-          }
+        document.querySelector(".eero-container").append(eeroBox);
 
+        //diplay Finn image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("eero-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        eeroBox.appendChild(chairImage);
 
-                 if (category == 'gerrit'){
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        eeroBox.append(modalContainer);
 
-                 // create a wood box, this is where image will go
-                  var eeroBox = document.createElement("div");
-               eeroBox.classList.add("wood-box");
-               document.querySelector(".gerrit-container").append(eeroBox);
-                         
-                 //diplay Finn image
-                 var chairImage = document.createElement("img");
-                 chairImage.classList.add('gerrit-image');
-                 chairImage.src = chair.fields.chairImage[0].url;
-                 eeroBox.appendChild(chairImage);
-                }
-        
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
+
+      if (category == "gerrit") {
+        // create a wood box, this is where image will go
+        var woodBox = document.createElement("div");
+        woodBox.classList.add("wood-box");
+        document.querySelector(".gerrit-container").append(woodBox);
+
+        //diplay Finn image
+        var chairImage = document.createElement("img");
+        chairImage.classList.add("gerrit-image");
+        chairImage.classList.add("js-modal-toggle");
+        chairImage.src = chair.fields.chairImage[0].url;
+        woodBox.appendChild(chairImage);
+
+        //add modle container to the song container
+        var modalContainer = document.createElement("div");
+        modalContainer.classList.add("modal-container");
+        woodBox.append(modalContainer);
+
+        // add modal box to modal container
+        var modalBox = document.createElement("div");
+        modalBox.classList.add("modal-box");
+        modalContainer.append(modalBox);
+
+        // add image to modal box
+        var modalImage = document.createElement("img");
+        modalImage.classList.add("modal-image");
+        modalImage.src = chair.fields.chairImage[0].url;
+        modalBox.append(modalImage);
+
+        // add chair titles to modal box
+        var chairTitle = document.createElement("h1");
+        chairTitle.classList.add("chair-title");
+        chairTitle.innerText = chair.fields.name;
+        modalBox.append(chairTitle);
+
+        // add artist to modal box
+        var nameOfDesigner = document.createElement("h1");
+        nameOfDesigner.classList.add("chair-artist");
+        nameOfDesigner.innerText = chair.fields.designer;
+        modalBox.append(nameOfDesigner);
+
+        // add close button to modal box
+        var closeModalBtn = document.createElement("div");
+        closeModalBtn.classList.add("modal-close-btn");
+        closeModalBtn.classList.add("js-modal-toggle");
+        closeModalBtn.innerHTML = "Close";
+        modalBox.append(closeModalBtn);
+      }
 
       //   //chair-container class
       //   var chairContainer = document.createElement("div");
@@ -348,28 +906,25 @@ function consoleLogChairs() {
       //   chairDesigner.classList.add('chair-designers');
       //   chairDesigner.innerText = chair.fields.designer;
       //   chairDesigner.append(chair-Designer)
-      // 
-      })
+      //
     });
+  });
 
-//close and open modal
-//find all of our modals
-var modals = document.querySelectorAll(".chair-container");
+  //close and open modal
+  //find all of our modals
+  var modals = document.querySelectorAll(".wood-box");
 
-//check if there are nay model
-if (modals) {
-  modals.forEach((modal)=> {
+  //check if there are nay model
+  if (modals) {
+    modals.forEach((modal) => {
+      var toggles = modal.querySelectorAll(".js-modal-toggle");
 
-var toogles = modal.querySelectorAll(".js-modal-toggle");
-
-//add event listner
-togles.forEach((toggle)=>{
-  toggle.addEventListener("click", function(){
-    modal.classList.toggle("modal-is-active");
-  })
-})
-
-  })
+      //add event listner
+      toggles.forEach((toggle) => {
+        toggle.addEventListener("click", function () {
+          modal.classList.toggle("modal-is-active");
+        });
+      });
+    });
+  }
 }
-
-    }
