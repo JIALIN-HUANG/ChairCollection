@@ -1,0 +1,62 @@
+.pmenu {
+    position: absolute;
+    width: 67px;
+    left: 58px;
+    top: 5%;
+  }
+
+  .AAC {
+    position: absolute;
+    width: 1304px;
+    height: 141px;
+    right: 0%;
+    top: 36px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 110px;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  .wood-container {
+    position: relative;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid;
+    overflow-x: auto;
+    overflow-y: hidden;
+    top: 20%;
+    height: 280px;
+    white-space: nowrap;
+    margin-top: 150px;
+  }
+
+  .time-container {
+    position: relative;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    top: 20%;
+    height: 280px;
+    white-space: nowrap;
+    margin-top: 10px;
+  }
+
+  .designers {
+    position: relative;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 280px;
+    white-space: nowrap;
+    margin-top: 10px;
+  }
+

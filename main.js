@@ -94,6 +94,7 @@ function showChairs() {
         closeModalBtn.innerHTML = "Close";
         modalBox.append(closeModalBtn);
       }
+
       // This is to for display the Text
       // if (category == 'fifties') {
       //   var fiftiesChairName = document.createElement("h1");
@@ -102,6 +103,7 @@ function showChairs() {
       //   document.querySelector(".fifties-container").appendChild(fiftiesChairName);
       // }
       //1900
+      
       if (category == "zeroZero") {
         // create a wood box, this is where image will go
         var woodBox = document.createElement("div");

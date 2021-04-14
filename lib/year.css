@@ -1,0 +1,20 @@
+.AAC {
+    position: absolute;
+    width: 1304px;
+    height: 141px;
+    right: 0%;
+    top: 36px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 110px;
+    text-align: right;
+  }
+
+  .pmenu {
+    position: absolute;
+    width: 67px;
+    left: 58px;
+    top: 5%;
+  }
