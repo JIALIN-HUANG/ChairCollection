@@ -2,7 +2,7 @@
     position: absolute;
     width: 1304px;
     height: 141px;
-    right: 0%;
+    right: 3%;
     top: 36px;
     font-family: Helvetica;
     font-style: normal;
@@ -19,48 +19,72 @@
     top: 5%;
   }
 
-  .wood-container {
-    position: relative;
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    border-top: 1px solid;
-    display: flex;
-    /* overflow-x: auto;
-    overflow-y: hidden; */
-    top: 20%;
-    height: 280px;
-    /* white-space: nowrap; */
-    margin-top: 150px;
-    flex-wrap: wrap;
+  .link{
+    text-decoration: none;
+    color: black;
   }
 
-  .wood-box{
-    margin: 15px;
+  .line {
+    position: absolute;
+    width: 1400px;
+    height: 0px;
+    left: 57px;
+    top: 150px;
+  
+    border: 0.5px solid #000000;
   }
 
-  .wood-image {
-    /* width: 200px;
-      height: auto; */
-    /* align-self: center;
-      margin-left: 1rem; */
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center center;
-  }
+.marco-image,
+.arne-image,
+.finn-image,
+.arneJ-image,
+.eero-image,
+.gerrit-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+}
 
-  .wood-image:hover{
+.wood-box {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 2rem;
+}
+.wood-image {
+  /* width: 200px;
+    height: auto; */
+  /* align-self: center;
+    margin-left: 1rem; */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.marco-image:hover,
+  .arne-image:hover,
+  .finn-image:hover,
+  .arneJ-image:hover,
+  .eero-image:hover,
+  .gerrit-image:hover {
     filter: brightness(50%);
     transition: all 0.25s;
   }
-
+  
+  /* .grid-section{
+  
+  } */
+  
   .modal-image {
-    position: absolute;
     width: 500px;
     height: auto;
     top: 30%;
-    
+    position: absolute;
   }
   
   .modal-container {
@@ -115,7 +139,7 @@
     top: 50%;
     padding: 2rem;
     line-height: 41px;
-  
+    flex-wrap: wrap;
   }
   
   .chair-title {
@@ -138,5 +162,21 @@
   
   .modal-close-btn {
     font-size: 1.5rem;
+  }
+
+  .designers {
+    position: relative;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-top: 1px solid; */
+    display: flex;
+    /* overflow-x: auto;
+    overflow-y: hidden; */
+    top: 20%;
+    height: 280px;
+    left:5%;
+    white-space: nowrap;
+    margin-top: 150px;
+    flex-wrap: wrap;
   }
   

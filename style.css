@@ -27,7 +27,7 @@
   position: absolute;
   width: 1304px;
   height: 141px;
-  right: 0%;
+  right: 3%;
   top: 36px;
   font-family: Helvetica;
   font-style: normal;
@@ -317,7 +317,6 @@
   }
 
   .chair-artist {
-    position: absolute;
     font-size: 1rem;
     font-weight: normal;
   

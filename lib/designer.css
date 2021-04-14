@@ -2,7 +2,7 @@
     position: absolute;
     width: 1304px;
     height: 141px;
-    right: 0%;
+    right: 3%;
     top: 36px;
     font-family: Helvetica;
     font-style: normal;
@@ -18,3 +18,83 @@
     left: 58px;
     top: 5%;
   }
+
+  .link{
+    text-decoration: none;
+    color: black;
+  }
+
+  .line {
+    position: absolute;
+    width: 1400px;
+    height: 0px;
+    left: 57px;
+    top: 150px;
+  
+    border: 0.5px solid #000000;
+  }
+
+.marco{
+  position: absolute;
+  right: 3%;
+  top: 197px;
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 110px;
+  text-align: right;
+}
+
+.arne{
+  position: absolute;
+  right: 3%;
+  top: 357px;
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 110px;
+  text-align: right;
+}
+
+.finn{
+  position: absolute;
+  right: 3%;
+  top: 517px;
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 110px;
+  text-align: right;
+}
+
+.arneJ{
+  position: absolute;
+  right: 3%;
+  top: 677px;
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 110px;
+  text-align: right;
+}
+
+.gerrit{
+  position: absolute;
+  right: 3%;
+  top: 837px;
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 110px;
+  text-align: right;
+}

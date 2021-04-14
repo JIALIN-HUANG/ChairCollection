@@ -2,7 +2,7 @@
     position: absolute;
     width: 1304px;
     height: 141px;
-    right: 0%;
+    right: 3%;
     top: 36px;
     font-family: Helvetica;
     font-style: normal;
@@ -11,33 +11,84 @@
     line-height: 110px;
     text-align: right;
   }
-
+  
   .pmenu {
     position: absolute;
     width: 67px;
     left: 58px;
     top: 5%;
   }
+  
+  .line {
+    position: absolute;
+    width: 1400px;
+    height: 0px;
+    left: 57px;
+    top: 150px;
+  
+    border: 0.5px solid #000000;
+  }
 
-  .wood-container {
+  .time-container {
     position: relative;
     font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
-    border-top: 1px solid;
+    /* border-top: 1px solid; */
     display: flex;
     /* overflow-x: auto;
     overflow-y: hidden; */
     top: 20%;
     height: 280px;
-    /* white-space: nowrap; */
+    left:5%;
+    white-space: nowrap;
     margin-top: 150px;
     flex-wrap: wrap;
-  }
+  }  
 
-  .wood-box{
-    margin: 15px;
-  }
+  .oneZero-container,
+.zeroZero-container,
+.twoZero-container,
+.threeZero-container,
+.fourZero-container,
+.fifties-container,
+.sixZero-container,
+.sevenZero-container,
+.eightZero-container,
+.nineZero-container,
+.twenty-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.zeroZero-image,
+.oneZero-image,
+.twoZero-image,
+.threeZero-image,
+.fourZero-image,
+.fifties-image,
+.sixZero-image,
+.sevenZero-image,
+.eightZero-image,
+.nineZero-image,
+.marco-image,
+.arne-image,
+.finn-image,
+.arneJ-image,
+.eero-image,
+.gerrit-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+}
 
+.wood-box {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 2rem;
+  }
   .wood-image {
     /* width: 200px;
       height: auto; */
@@ -49,18 +100,36 @@
     background-size: cover;
     background-position: center center;
   }
-
-  .wood-image:hover{
+  .wood-image:hover,
+  .zeroZero-image:hover,
+  .oneZero-image:hover,
+  .twoZero-image:hover,
+  .threeZero-image:hover,
+  .fourZero-image:hover,
+  .fifties-image:hover,
+  .sixZero-image:hover,
+  .sevenZero-image:hover,
+  .eightZero-image:hover,
+  .nineZero-image:hover,
+  .marco-image:hover,
+  .arne-image:hover,
+  .finn-image:hover,
+  .arneJ-image:hover,
+  .eero-image:hover,
+  .gerrit-image:hover {
     filter: brightness(50%);
     transition: all 0.25s;
   }
-
+  
+  /* .grid-section{
+  
+  } */
+  
   .modal-image {
-    position: absolute;
     width: 500px;
     height: auto;
     top: 30%;
-    
+    position: absolute;
   }
   
   .modal-container {
