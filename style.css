@@ -315,4 +315,51 @@
     font-size: 3.5rem;
     padding: 70px 0;
   }
+
+  .chair-artist {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: normal;
+  
+    width: 255px;
+    height: 135px;
+    text-align: center;
+    top: 70%;
+    line-height: 41px;
+  
+  }
+  
+  .chair-title {
+      position: absolute;
+      font-size: 1.6rem;
+      font-weight: normal;
+      text-align: center;
+      top: 60%;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  .modal-image {
+    width: 300px;
+    height: auto;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+  }
+
+
+.modal-box {
+  box-sizing: border-box;
+  background: #EFEFEF;
+  overflow-x: scroll;
+  position: relative;
+  height: 700px;
+  width: 500px;
+  padding: 2rem;
+  transition: all 0.25s;
+}
+
+
+  
 }
