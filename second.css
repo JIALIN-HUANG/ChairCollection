@@ -1,27 +1,109 @@
 .pmenu {
-    position: absolute;
-    width: 67px;
-    left: 58px;
-    top: 5%;
-  }
+  position: absolute;
+  width: 67px;
+  left: 58px;
+  top: 5%;
+}
 
+.AAC {
+  position: absolute;
+  width: 1304px;
+  height: 141px;
+  right: 3%;
+  top: 36px;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 110px;
+  text-align: right;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.wood-container {
+  position: relative;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid;
+  overflow-x: auto;
+  overflow-y: hidden;
+  top: 20%;
+  height: 280px;
+  white-space: nowrap;
+  margin-top: 150px;
+  text-align: right;
+}
+
+.time-container {
+  position: relative;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid;
+  overflow-x: auto;
+  overflow-y: hidden;
+  top: 20%;
+  height: 280px;
+  white-space: nowrap;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.designers {
+  position: relative;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 280px;
+  white-space: nowrap;
+  margin-top: 10px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 640px) {
+  
   .AAC {
     position: absolute;
-    width: 1304px;
+    width: 304px;
     height: 141px;
-    right: 0%;
-    top: 36px;
+  }
+
+  .pmenu {
+    position: absolute;
+    width: 50px;
+    left: 58px;
+    top: 15%;
+  }
+
+  .AA {
+    position: absolute;
+    right: 2%;
+    top: 50px;
+
     font-family: Helvetica;
     font-style: normal;
     font-weight: bold;
-    font-size: 96px;
-    line-height: 110px;
-    text-align: right;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
   }
 
-  .link{
-    text-decoration: none;
-    color: black;
+  .chairTitle {
+    position: absolute;
+    right: 2%;
+    top: 79px;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: right;
   }
 
   .wood-container {
@@ -34,34 +116,57 @@
     top: 20%;
     height: 280px;
     white-space: nowrap;
-    margin-top: 150px;
-    text-align: right;
+    margin-top: 220px;
   }
 
-  .time-container {
-    position: relative;
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    border-top: 1px solid;
-    overflow-x: auto;
-    overflow-y: hidden;
-    top: 20%;
-    height: 280px;
-    white-space: nowrap;
-    margin-top: 10px;
+  .dis {
+    opacity: 0%;
+    display: none;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    padding: 70px 0;
+  }
+
+  .chair-artist {
+    font-size: 1rem;
+    font-weight: normal;
+
+    width: 255px;
+    height: 135px;
     text-align: center;
+    top: 70%;
+    line-height: 41px;
   }
 
-  .designers {
+  .chair-title {
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+    top: 60%;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  .modal-image {
+    width: 300px;
+    height: auto;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+  }
+
+  .modal-box {
+    box-sizing: border-box;
+    background: #efefef;
+    overflow-x: scroll;
     position: relative;
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    border-top: 1px solid;
-    overflow-x: auto;
-    overflow-y: hidden;
-    height: 280px;
-    white-space: nowrap;
-    margin-top: 10px;
-    text-align: left;
+    height: 700px;
+    width: 500px;
+    padding: 2rem;
+    transition: all 0.25s;
   }
-
+}
