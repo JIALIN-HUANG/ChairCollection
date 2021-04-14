@@ -98,3 +98,50 @@
   line-height: 110px;
   text-align: right;
 }
+
+
+@media only screen and (max-width: 640px) {
+  .AAC {
+    position: absolute;
+    width: 304px;
+    height: 160px;
+    font-size: 3rem;
+    top: 10%;
+  }
+
+  .pmenu {
+    position: absolute;
+    width: 50px;
+    left: 58px;
+    top: 15%;
+  }
+
+  .line {
+    position: absolute;
+    left: 18px;
+    right: 5%;
+    top: 220px;
+  }
+  
+  .marco{
+    top: 220px;
+  }
+  .arne{
+    top: 320px;
+  }
+  .finn{
+    top: 420px;
+  }
+  .arneJ{
+    top: 520px;
+  }
+  .gerrit{
+    top: 630px;
+    line-height: 70pt
+  }
+
+  .link{
+    font-size: 3rem;
+  }
+
+}

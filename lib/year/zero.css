@@ -1,6 +1,6 @@
 .AAC {
     position: absolute;
-    width: 1304px;
+    width: 1004px;
     height: 141px;
     right: 3%;
     top: 36px;
@@ -41,7 +41,7 @@
     height: 280px;
     left:5%;
     white-space: nowrap;
-    margin-top: 150px;
+    margin-top: 220px;
     flex-wrap: wrap;
   }  
 
@@ -154,7 +154,7 @@
     background: #EFEFEF;
     overflow-x: scroll;
     position: relative;
-    height: 800px;
+    height: 600px;
     width: 1000px;
     padding: 2rem;
     transition: all 0.25s;
@@ -186,6 +186,16 @@
     line-height: 41px;
   
   }
+
+  .line {
+    position: absolute;
+    width: 1400px;
+    height: 0px;
+    left: 15px;
+    top: 220px;
+  
+    border: 0.5px solid #000000;
+  }
   
   .chair-title {
       position: absolute;
@@ -207,5 +217,183 @@
   
   .modal-close-btn {
     font-size: 1.5rem;
+  }
+  
+  @media only screen and (max-width: 640px) {
+    .AAC {
+      position: absolute;
+      width: 304px;
+      height: 160px;
+      font-size: 3rem;
+      top: 10%;
+    }
+  
+    .pmenu {
+      position: absolute;
+      width: 50px;
+      left: 58px;
+      top: 15%;
+    }
+  
+  
+    .oneZero-container,
+.zeroZero-container,
+.twoZero-container,
+.threeZero-container,
+.fourZero-container,
+.fifties-container,
+.sixZero-container,
+.sevenZero-container,
+.eightZero-container,
+.nineZero-container,
+.twenty-container {
+  display: flex;
+  flex-wrap: wrap;
+    position: relative;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    /* overflow-x: auto;
+      overflow-y: hidden; */
+    top: 30%;
+    height: 350px;
+    /* white-space: nowrap; */
+    margin-top: 30px;
+    margin-left: 34px;
+    flex-wrap: wrap;
+  }
+  
+  .wood-box {
+    margin: 15px;
+  }
+  
+  .zeroZero-image,
+  .oneZero-image,
+  .twoZero-image,
+  .threeZero-image,
+  .fourZero-image,
+  .fifties-image,
+  .sixZero-image,
+  .sevenZero-image,
+  .eightZero-image,
+  .nineZero-image,
+  .marco-image,
+  .arne-image,
+  .finn-image,
+  .arneJ-image,
+  .eero-image,
+  .gerrit-image {
+    /* width: 200px;
+        height: auto; */
+    /* align-self: center;
+        margin-left: 1rem; */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .wood-image:hover,
+  .zeroZero-image:hover,
+  .oneZero-image:hover,
+  .twoZero-image:hover,
+  .threeZero-image:hover,
+  .fourZero-image:hover,
+  .fifties-image:hover,
+  .sixZero-image:hover,
+  .sevenZero-image:hover,
+  .eightZero-image:hover,
+  .nineZero-image:hover,
+  .marco-image:hover,
+  .arne-image:hover,
+  .finn-image:hover,
+  .arneJ-image:hover,
+  .eero-image:hover,
+  .gerrit-image:hover {
+    filter: brightness(50%);
+    transition: all 0.25s;
+  }
+  
+  .modal-image {
+    width: 300px;
+    height: auto;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+  }
+  
+  .modal-container {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none;
+  
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s;
+  }
+  
+  .modal-box {
+    box-sizing: border-box;
+    background: #efefef;
+    overflow-x: scroll;
+    position: relative;
+    height: 700px;
+    width: 500px;
+    padding: 2rem;
+    transition: all 0.25s;
+  }
+  
+  .modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .modal-is-active .modal-container {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.25s;
+  }
+  
+  .chair-artist {
+display: flex;
+  font-size: 1rem;
+  font-weight: normal;
+
+  height: auto;
+  width: auto;
+  text-align: center;
+  top: 70%;
+  line-height: 41px;
+  right: 15%;
+  }
+  
+  .chair-title {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+    left: 25%;
+    top: 60%;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    
+  }
+  
+  .modal-close-btn {
+    font-size: 1.5rem;
+  }
+  
+  
   }
   

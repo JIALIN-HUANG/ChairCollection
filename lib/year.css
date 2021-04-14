@@ -1,6 +1,6 @@
 .AAC {
   position: absolute;
-  width: 1304px;
+  width: 1004px;
   height: 141px;
   right: 3%;
   top: 36px;
@@ -76,8 +76,6 @@
 
 .three {
   position: absolute;
-  width: 365px;
-  height: 112px;
   right: 50%;
   top: 593px;
 
@@ -106,8 +104,6 @@
 
 .five {
   position: absolute;
-  width: 365px;
-  height: 112px;
   right: 3%;
   top: 257px;
 
@@ -121,8 +117,6 @@
 
 .six {
   position: absolute;
-  width: 365px;
-  height: 112px;
   right: 3%;
   top: 369px;
 
@@ -136,7 +130,6 @@
 
 .seven {
   position: absolute;
-  width: 365px;
   height: 112px;
   right: 3%;
   top: 481px;
@@ -151,8 +144,6 @@
 
 .eight {
   position: absolute;
-  width: 365px;
-  height: 112px;
   right: 3%;
   top: 593px;
 
@@ -166,8 +157,6 @@
 
 .nine {
   position: absolute;
-  width: 365px;
-  height: 112px;
   right: 3%;
   top: 705px;
 
@@ -182,4 +171,44 @@
 .link{
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 640px) {
+  .AAC {
+    position: absolute;
+    width: 304px;
+    height: 160px;
+    font-size: 3rem;
+    top: 10%;
+  }
+
+  .pmenu {
+    position: absolute;
+    width: 50px;
+    left: 58px;
+    top: 15%;
+  }
+
+  .zero,
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight,
+  .nine{
+    width: 255px;
+font-size: 3rem;
+  }
+
+  .line {
+    position: absolute;
+    left: 18px;
+    right: 5%;
+    top: 220px;
+  }
+  
+
 }
