@@ -179,4 +179,13 @@
     margin-top: 150px;
     flex-wrap: wrap;
   }
+
+  .marco-container,
+.arne-container,
+.finn-container,
+.arneJ-container,
+.eero-container,
+.gerrit-container {
+  display: flex;
+}
   
